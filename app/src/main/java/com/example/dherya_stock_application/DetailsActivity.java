@@ -89,6 +89,9 @@ public class DetailsActivity extends AppCompatActivity {
                     // return the data to onPostExecute method
                     return result;
                 }
+                else{
+                    Toast.makeText(DetailsActivity.this, "Error Connecting with API. Retrying..", Toast.LENGTH_SHORT).show();
+                }
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
@@ -117,12 +120,9 @@ public class DetailsActivity extends AppCompatActivity {
                 }
                 ((TextView)findViewById(R.id.symbolName)).setText(selectedName);
                 ((TextView)findViewById(R.id.fullName)).setText(map.get("name"));
-                ((TextView)findViewById(R.id.currentPrice)).setText(map.get("price"));
-                ((TextView)findViewById(R.id.lowPrice)).setText(map.get("low"));
-                ((TextView)findViewById(R.id.highPrice)).setText(map.get("high"));
-
-
-
+                ((TextView)findViewById(R.id.currentPrice)).setText("$"+map.get("price"));
+                ((TextView)findViewById(R.id.lowPrice)).setText("$"+map.get("low"));
+                ((TextView)findViewById(R.id.highPrice)).setText("$"+map.get("high"));
 
 
             } catch (Exception e) {

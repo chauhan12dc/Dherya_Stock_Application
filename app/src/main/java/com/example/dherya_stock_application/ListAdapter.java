@@ -33,7 +33,7 @@ public class ListAdapter extends ArrayAdapter<Stocks> {
 
         name.setText(stocks.Short_Name);
         fullName.setText(stocks.name);
-        stockPrice.setText(stocks.price);
+        stockPrice.setText("$"+stocks.price);
 
 
 

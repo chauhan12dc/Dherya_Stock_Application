@@ -76,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
                     // return the data to onPostExecute method
                     return result;
                 }
+                else{
+                    Toast.makeText(MainActivity.this, "Error Connecting with API. Retrying..", Toast.LENGTH_SHORT).show();
+                }
 
             } catch (MalformedURLException e) {
                 e.printStackTrace();
