@@ -13,19 +13,30 @@
             android:id="@+id/Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Check" />
+            android:paddingLeft="50dp"
+            android:text="Check"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/Full_Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Check1" />
+            android:paddingLeft="50dp"
+            android:text="Check1"
+            android:textSize="16sp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/Stock_Price"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:text="Check" />
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"
+        android:text="Check"
+        android:textAlignment="viewEnd"
+        android:textColor="#040000"
+        android:textStyle="bold" />
 </LinearLayout>

@@ -9,6 +9,9 @@
     <ListView
         android:id="@+id/stock_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#917C7C"
+        android:backgroundTint="#806767"
+        android:clickable="true"
         tools:listitem="@layout/custom_list" />
 </androidx.constraintlayout.widget.ConstraintLayout>
